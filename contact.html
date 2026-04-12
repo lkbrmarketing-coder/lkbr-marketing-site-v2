@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact LKBR Marketing LLC | Free Website Preview | Scottsdale AZ Website Design</title>
+  <meta name="description" content="Get a free website preview from LKBR Marketing LLC in Scottsdale AZ. Tell us about your business and we'll send a preview within 24 hours. No payment required.">
+  <meta name="keywords" content="website design Scottsdale AZ, get found online Scottsdale, website designer Scottsdale, local business website design Arizona">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <img src="LKBR Marketing LLC Official Logo.png" height="44" alt="LKBR Marketing LLC Logo">
+        <span>LKBR Marketing LLC</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="nav-cta">Get Free Preview</a>
+      <button class="hamburger" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE OVERLAY -->
+  <div class="mobile-overlay" id="mobileOverlay" role="dialog" aria-modal="true">
+    <button class="overlay-close" id="overlayClose" aria-label="Close menu">&times;</button>
+    <ul class="overlay-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero-inner">
+    <div class="hero-dot-pattern"></div>
+    <div class="hero-content">
+      <span class="eyebrow fade-in">Contact</span>
+      <h1 class="fade-in">Get Your Free Website Preview.</h1>
+      <p class="hero-sub fade-in">Tell us about your business. We'll send you a free concept mockup within 24 hours &mdash; no payment required until you're ready to move forward.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT LAYOUT -->
+  <section class="section-contact">
+    <div class="contact-grid">
+
+      <!-- LEFT: FORM -->
+      <div class="fade-in">
+        <!-- Success State -->
+        <div class="form-success" id="formSuccess">
+          <div class="success-icon">&#10003;</div>
+          <h3>Message Received!</h3>
+          <p>We'll send your free concept mockup within 24 hours. Keep an eye on your inbox.</p>
+          <a href="index.html" class="btn btn-primary" style="display:inline-flex;border-radius:8px;padding:12px 28px;">Back to Home</a>
+        </div>
+
+        <!-- Error -->
+        <div class="form-error" id="formError"></div>
+
+        <!-- Form -->
+        <form
+          id="contactForm"
+          class="contact-form"
+          action="https://formspree.io/f/xeevjqqa"
+          method="POST"
+        >
+          <input type="hidden" name="_subject" value="New Inquiry — LKBR Marketing LLC">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName" placeholder="John" required>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Smith" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="businessName">Business Name</label>
+            <input type="text" id="businessName" name="businessName" placeholder="Smith Plumbing LLC" required>
+          </div>
+
+          <div class="form-group">
+            <label for="businessType">Business Type</label>
+            <select id="businessType" name="businessType" required>
+              <option value="" disabled selected>Select your business type&hellip;</option>
+              <option value="Restaurant or Cafe">Restaurant or Cafe</option>
+              <option value="Plumber or HVAC">Plumber or HVAC</option>
+              <option value="Hair Salon or Barbershop">Hair Salon or Barbershop</option>
+              <option value="Auto Repair Shop">Auto Repair Shop</option>
+              <option value="Landscaping or Lawn Care">Landscaping or Lawn Care</option>
+              <option value="Contractor or Builder">Contractor or Builder</option>
+              <option value="Retail or Boutique">Retail or Boutique</option>
+              <option value="Gym or Fitness Studio">Gym or Fitness Studio</option>
+              <option value="Law Office">Law Office</option>
+              <option value="Other Local Business">Other Local Business</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="john@smithplumbing.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="(480) 555-0000">
+          </div>
+
+          <div class="form-group">
+            <label>Services Interested In</label>
+            <div class="service-pills">
+              <label class="service-pill-label">
+                <input type="checkbox" name="services[]" value="Website Design ($500 Starter)">
+                <span class="pill-text">Website Design ($500 Starter)</span>
+              </label>
+              <label class="service-pill-label">
+                <input type="checkbox" name="services[]" value="Website Design ($900 Business)">
+                <span class="pill-text">Website Design ($900 Business)</span>
+              </label>
+              <label class="service-pill-label">
+                <input type="checkbox" name="services[]" value="Content Creation">
+                <span class="pill-text">Content Creation</span>
+              </label>
+              <label class="service-pill-label">
+                <input type="checkbox" name="services[]" value="Not Sure — Tell Me More">
+                <span class="pill-text">Not Sure &mdash; Tell Me More</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Tell Us About Your Business</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Tell us about your business and what you're looking for online..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Send My Free Concept Preview Request &rarr;</button>
+        </form>
+      </div>
+
+      <!-- RIGHT: INFO CARD -->
+      <div class="fade-in">
+        <div class="contact-info-card">
+          <h3>What Happens Next?</h3>
+
+          <div class="next-steps">
+            <div class="next-step">
+              <div class="step-circle">01</div>
+              <div class="next-step-text">
+                <h4>We review your info and research your business</h4>
+                <p>Usually within a few hours of receiving your form</p>
+              </div>
+            </div>
+            <div class="next-step">
+              <div class="step-circle">02</div>
+              <div class="next-step-text">
+                <h4>We create your free concept mockup</h4>
+                <p>A layout and style mockup showing exactly what your site will look like</p>
+              </div>
+            </div>
+            <div class="next-step">
+              <div class="step-circle">03</div>
+              <div class="next-step-text">
+                <h4>You approve, we build</h4>
+                <p>Approve the concept, sign a simple agreement, and pay 50% to start. We build the full site with 2 rounds of revisions &mdash; pay the balance on final approval.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-divider"></div>
+
+          <div class="contact-details">
+            <div class="contact-detail">
+              <span class="detail-label">Email</span>
+              <a href="mailto:lkbr.marketing@gmail.com" class="detail-value" style="color:var(--white);transition:color 0.2s;">lkbr.marketing@gmail.com</a>
+            </div>
+            <div class="contact-detail">
+              <span class="detail-label">Location</span>
+              <span class="detail-value">Scottsdale, Arizona</span>
+            </div>
+            <div class="contact-detail">
+              <span class="detail-label">Response</span>
+              <span class="detail-value">Within 24 hours</span>
+            </div>
+          </div>
+
+          <div class="contact-social">
+            <a href="https://facebook.com/lkbrmarketing" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              Facebook
+            </a>
+            <a href="https://twitter.com/lkbrmarketing" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              Twitter
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TRUST ROW -->
+  <section class="section-trust">
+    <div class="trust-cards">
+      <div class="trust-card fade-in">
+        <div class="trust-card-icon">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+        </div>
+        <h4>No Payment Until You Love It</h4>
+        <p>Free preview, always</p>
+      </div>
+      <div class="trust-card fade-in">
+        <div class="trust-card-icon">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25a3 3 0 013 3m3 0a6 6 0 01-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1121.75 8.25z"/></svg>
+        </div>
+        <h4>You Own Everything</h4>
+        <p>Full ownership transfer</p>
+      </div>
+      <div class="trust-card fade-in">
+        <div class="trust-card-icon">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <h4>7-Day Delivery</h4>
+        <p>Fast turnaround guaranteed</p>
+      </div>
+      <div class="trust-card fade-in">
+        <div class="trust-card-icon">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+        </div>
+        <h4>Scottsdale Local</h4>
+        <p>Arizona based business</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-inner">
+        <div class="footer-col">
+          <div class="footer-brand">
+            <img src="LKBR Marketing LLC Official Logo.png" height="40" alt="LKBR Marketing LLC">
+            <span>LKBR Marketing LLC</span>
+          </div>
+          <p class="footer-tagline">Getting Local Businesses Found Online</p>
+          <p class="footer-location">Scottsdale, Arizona</p>
+          <a href="mailto:lkbr.marketing@gmail.com" class="footer-email">lkbr.marketing@gmail.com</a>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Services</h4>
+          <ul class="footer-links">
+            <li><a href="pricing.html">Website Design ($500)</a></li>
+            <li><a href="pricing.html">Website Design ($900)</a></li>
+            <li><a href="services.html">Content Creation</a></li>
+            <li><a href="services.html">Website Maintenance</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Company</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="footer-social">
+            <a href="https://facebook.com/lkbrmarketing" target="_blank" rel="noopener" class="social-link">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              Facebook
+            </a>
+            <a href="https://twitter.com/lkbrmarketing" target="_blank" rel="noopener" class="social-link">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              Twitter
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 LKBR Marketing LLC &middot; Scottsdale, Arizona &middot; Website Design for Local Businesses</p>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button class="back-to-top" aria-label="Back to top">&#8679;</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
